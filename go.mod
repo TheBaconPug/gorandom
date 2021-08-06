@@ -1,3 +1,3 @@
-module github.com/TheBaconPug/gorandom
+module https://github.com/TheBaconPug/gorandom
 
 go 1.16
