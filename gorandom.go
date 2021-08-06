@@ -16,7 +16,7 @@ const (
 	letterIdxMax  = 63 / letterIdxBits
 )
 
-func randInt(c int) int {
+func RandInt(c int) int {
 	var src = rand.NewSource(time.Now().UnixNano())
 	b := make([]byte, c)
 	for i, cache, remain := c-1, src.Int63(), letterIdxMax; i >= 0; {
@@ -33,7 +33,7 @@ func randInt(c int) int {
 	return *(*int)(unsafe.Pointer(&b))
 }
 
-func randStr(c int) string {
+func RandStr(c int) string {
 	var src = rand.NewSource(time.Now().UnixNano())
 	b := make([]byte, c)
 	for i, cache, remain := c-1, src.Int63(), letterIdxMax; i >= 0; {
