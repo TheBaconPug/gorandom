@@ -6,13 +6,13 @@
 
 ## Functions
 
-### randStr()
+### RandStr()
 
-``gorandom.randStr(number of characters)``
+``gorandom.RandStr(number of characters)``
 
-### randInt()
+### RandInt()
 
-``gorandom.randInt(number of characters)``
+``gorandom.RandInt(number of characters)``
 
 ## Example Program
 
@@ -24,6 +24,6 @@ import (
 )
 
 func main() {
-  println(gorandom.randStr(10))
+  println(gorandom.RandStr(10))
 }
 ```
