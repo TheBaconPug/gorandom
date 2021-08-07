@@ -23,7 +23,7 @@ func RandInt(c int) int {
 		if remain == 0 {
 			cache, remain = src.Int63(), letterIdxMax
 		}
-		if idx := int(cache & letterIdxMask); idx < len(letters) {
+		if idx := int(cache & letterIdxMask); idx < len(numbers) {
 			b[i] = numbers[idx]
 			i--
 		}
